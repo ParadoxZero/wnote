@@ -36,10 +36,12 @@ wn get todo -a
 
 # Paginate or limit output
 wn get checkpoint --last 10
-Advanced Management
+```
+
+### Advanced Management
 Use the power of Unix piping and your preferred text editor.
 
-Bash
+```bash
 # Multi-select notes to delete using fzf
 wn get --ids | fzf -m | xargs wn prune
 
